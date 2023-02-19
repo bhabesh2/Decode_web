@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2);
+    grid-auto-rows: minmax(100px, auto);
+    border: 1px solid black;
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 2vh 12vw;
+
+}
+
+.box{
+    padding: 2vh 4vw;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* nav bar */
+
+.box1{
+    background-color: blue;
+    grid-column: 1/-1 ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 1px solid black;
+    gap: 20px;
+    padding: 3vh 4vw;
+}
+
+.box1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.box1 p{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+}
+
+.box1 ul li a{
+    color: white;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* left hero section */
+
+.box2{
+    display: grid;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.box2 .btn{
+    width: fit-content;
+    height: fit-content;
+    padding: 1vh 1vw;
+    border-radius: 12px;
+    background-color: grey;
+    color: white;
+    font-size: 17px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box2 p{
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+/* right hero section */
+
+.box3{
+    background-color: rgb(29, 27, 27);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3);
+    gap: 20px;
+}
+
+.box3 img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* footer section */
+
+.box4{
+    background-color: yellow;
+    grid-column: 1/-1;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    
+
+}
+
+.box4 .right{
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 3vh 4vw;
+}
+
+.box4 .logo{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
